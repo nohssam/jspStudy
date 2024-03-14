@@ -14,7 +14,7 @@
 <script type="text/javascript">
 	function save_go(f) {
 		// 검사 
-		f.action = "/01_servlet/Guest";
+		f.action = "${pageContext.request.contextPath}/GuestBookController";
 		f.submit();
 	}
 </script>
@@ -23,7 +23,7 @@
 	<div>
 		<h2>방명록 : 작성화면</h2>
 		<hr />
-		<p>[<a href="/01_servlet/Guest?cmd=list">목록으로 이동</a>]</p>
+		<p>[<a href="${pageContext.request.contextPath}/GuestBookController?cmd=list">목록으로 이동</a>]</p>
 		<form method="post">
 			<table>
 				<tr align="center">

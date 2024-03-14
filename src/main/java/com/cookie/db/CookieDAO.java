@@ -1,7 +1,5 @@
 package com.cookie.db;
 
-import java.util.List;
-
 import org.apache.ibatis.session.SqlSession;
 
 public class CookieDAO {

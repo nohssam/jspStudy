@@ -17,7 +17,7 @@
 	<div>
 		<h2> 방 명 록 </h2>
 		<hr>
-		<p>[<a href="${pageContext.request.contextPath}/GuestBookController?cmd=write">방명록 쓰기</a>]</p>
+		<p>[<a href="${pageContext.request.contextPath}/GuestBook2Controller?cmd=write">방명록 쓰기</a>]</p>
 		<table>
 			<thead>
 				<tr style="background-color: #99ccff"><th>번호</th><th>작성자</th><th>제목</th><th>작성일</th></tr>
@@ -32,7 +32,7 @@
 							<tr>
 							    <td>${vs.count}</td>
 							    <td>${k.name }</td>
-							    <td><a href="${pageContext.request.contextPath}/GuestBookController?cmd=onelist&idx=${k.idx}"> ${k.subject }</a> </td>
+							    <td><a href="${pageContext.request.contextPath}/GuestBook2Controller?cmd=onelist&idx=${k.idx}"> ${k.subject }</a> </td>
 							    <td>${k.regdate.substring(0,10)}</td>
 							</tr>
 						</c:forEach>

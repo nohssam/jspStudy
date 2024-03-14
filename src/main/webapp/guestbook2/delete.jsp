@@ -19,7 +19,7 @@
 		if(pwd == pwd2){
 			const chk = confirm("정말삭제할까요?");
 			if(chk){
-				f.action="${pageContext.request.contextPath}/GuestBookController";
+				f.action="${pageContext.request.contextPath}/GuestBook2Controller";
 				f.submit();
 			}else{
 				history.go(-1);	
@@ -37,7 +37,7 @@
 	<div>
 		<h2>방명록 : 삭제화면</h2>
 		<hr />
-		<p>[<a href="${pageContext.request.contextPath}/GuestBookController?cmd=list">목록으로 이동</a>]</p>
+		<p>[<a href="${pageContext.request.contextPath}/GuestBook2Controller?cmd=list">목록으로 이동</a>]</p>
 		<form method="post">
 			<table>
 				<tr align="center">
